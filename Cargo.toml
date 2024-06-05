@@ -1,0 +1,17 @@
+[package]
+name = "aspic-api"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alex Jackson <mail@alexjackson.uk>"]
+description = "A REST API for an ASPIC+ structured argumentation engine."
+license = "MIT"
+repository = "https://github.com/alexjackson1/aspic-api"
+readme = "README.md"
+
+
+[dependencies]
+rocket = { version = "0.5", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+aspic = { path = "../aspic", features = ["serde_support"] }
+rocket_okapi = { version = "0.8", features = ["rapidoc", "swagger"] }
