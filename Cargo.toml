@@ -15,3 +15,4 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 aspic = { path = "../aspic", features = ["serde_support"] }
 rocket_okapi = { version = "0.8", features = ["rapidoc", "swagger"] }
+crustabri = "1.1.1"
